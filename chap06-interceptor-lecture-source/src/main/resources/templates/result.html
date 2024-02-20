@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Return</title>
+    <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+<!--  설명. thymeleaf에서는 문자열과 ${ }을 둘다 출력하려면 +로 연결하는 것이 아니라 | |로 묶어준다.
+      "메소드 호출 수행시간:" + ${interceptor} 로 묶으면 ${} 도 문자열로 인식해버림.-->
+    <h1 align="center" th:text="|메소드 호출 수행시간: ${interval}|"></h1>
+</body>
+</html>
